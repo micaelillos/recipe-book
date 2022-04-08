@@ -2,7 +2,6 @@ import express from 'express'
 import jwt, { verify } from 'jsonwebtoken';
 import { DB } from '../../data/db';
 import { User } from '../../models/user.model';
-import auth from '../auth/verifyToken';
 const router = express.Router();
 // router.use(auth)
 

@@ -15,8 +15,9 @@ export class RestInterface {
 
   initRoutes = () => {
     // Routes
-    this.app.use('/auth',authRouter)
-    this.app.use('/', recipeRouter)
+
+    this.app.use('/api', recipeRouter)
+    this.app.use('/api/auth',authRouter)
 
     this.app.listen(this.port, () => {
       console.log(`RestInterface listening on ${this.port}`);

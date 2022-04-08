@@ -12,7 +12,7 @@ import { LoginAction, LoginFailAction, LoginStartAction, LogoutAction } from './
 
 @Injectable()
 export class AuthEffects {
-
+    
     constructor(private actions$: Actions, private http: HttpClient, private router: Router) { }
     authLogin$ = createEffect(() => {
         return this.actions$.pipe(
