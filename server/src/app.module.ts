@@ -10,7 +10,7 @@ import { UserService } from './features/user/user.service';
   imports: [
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      autoSchemaFile: true,
+      autoSchemaFile: true
     }),
   ],
   controllers: [AppController],

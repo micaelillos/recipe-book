@@ -1,6 +1,7 @@
 # Recipe Book
 
--- current place 378 router store max
+-- current place 379 router store max
+- migrate recipes from services to ngrx
 ## Build docker image
 
 ### local

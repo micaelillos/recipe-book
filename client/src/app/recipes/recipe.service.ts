@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 import {Store} from '@ngrx/store'
 import { AddIngredientAction, AddIngredientsAction } from '../shopping-list/store/shopping-list.actions';
 import { AppState } from '../store';
+import { setRecipes } from './store/recipes.actions';
 
 @Injectable({ providedIn: 'root' })
 export class RecipeService  {
@@ -31,8 +32,9 @@ export class RecipeService  {
       .pipe(map((response) => {
         return response.body.data.map(recipe => ({ ingredients: [], ...recipe }))
       }), tap(recipes => {
-        this.recipes = recipes
-        this.recipesChanged.next(this.recipes)
+        // this.recipes = recipes
+        // this.recipesChanged.next(this.recipes)
+        this.store.dispatch(setRecipes({recipes}))
       }))
   }
 
