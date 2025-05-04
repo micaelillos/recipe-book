@@ -6,4 +6,4 @@ Run Backend
 ```npm run dev```
 
 Setup client
-``` cd client && npm i``
+```cd client && npm i```
