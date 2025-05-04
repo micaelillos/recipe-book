@@ -6,7 +6,7 @@ import { DB } from '../data/db';
 
 export class RestInterface {
   app: express.Application = express();
-  constructor(private port = 3000) {
+  constructor(private port = 3001) {
     this.app.use(express.json())
     this.app.use(cors())
 
