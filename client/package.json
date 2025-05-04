@@ -9,7 +9,9 @@
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "private": true,
   "dependencies": {
@@ -21,10 +23,12 @@
     "@angular/platform-browser": "^10.0.5",
     "@angular/platform-browser-dynamic": "^10.0.5",
     "@angular/router": "^10.0.5",
+    "@cypress/schematic": "^3.0.0",
     "@ngrx/effects": "^10.0.0",
     "@ngrx/router-store": "^10.0.0",
     "@ngrx/store": "^10.0.0",
     "bootstrap": "3.3.7",
+    "cypress": "^14.3.2",
     "rxjs": "^6.6.3",
     "rxjs-compat": "^6.0.0",
     "tslib": "^2.0.3"
