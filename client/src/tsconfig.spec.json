@@ -5,12 +5,14 @@
     "module": "commonjs",
     "types": [
       "jasmine",
-      "node"
+      "node",
+      "jest"
     ]
   },
   "files": [
     "test.ts",
-    "polyfills.ts"
+    "polyfills.ts",
+    "setup-jest.ts"
   ],
   "include": [
     "**/*.spec.ts",

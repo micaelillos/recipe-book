@@ -5,9 +5,13 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:ci": "jest --runInBand",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "private": true,
   "dependencies": {
@@ -19,14 +23,15 @@
     "@angular/platform-browser": "^10.0.5",
     "@angular/platform-browser-dynamic": "^10.0.5",
     "@angular/router": "^10.0.5",
+    "@cypress/schematic": "^3.0.0",
     "@ngrx/effects": "^10.0.0",
     "@ngrx/router-store": "^10.0.0",
     "@ngrx/store": "^10.0.0",
     "bootstrap": "3.3.7",
+    "cypress": "^14.3.2",
     "rxjs": "^6.6.3",
     "rxjs-compat": "^6.0.0",
-    "tslib": "^2.0.3",
-    "zone.js": "^0.10.3"
+    "tslib": "^2.0.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.1100.4",
@@ -35,18 +40,23 @@
     "@ngrx/store-devtools": "10.0.0",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/jest": "^29.5.14",
     "@types/node": "^12.19.9",
     "codelyzer": "^6.0.1",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
+    "jest": "^26.6.3",
+    "jest-preset-angular": "^8.4.0",
     "karma": "~5.1.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.4",
     "protractor": "~7.0.0",
+    "ts-jest": "^26.5.6",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2"
+    "typescript": "^3.9.10",
+    "zone.js": "^0.15.0"
   }
 }
